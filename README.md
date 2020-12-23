@@ -1,4 +1,7 @@
-# ReactRx connects RxJs with React
+# React-streamy connects RxJs with React
+
+[![Coverage Status](https://coveralls.io/repos/github/nyavro/React-streamy/badge.svg?branch=master)](https://coveralls.io/github/nyavro/React-streamy?branch=master)
+[![Build Status](https://travis-ci.com/nyavro/React-streamy.svg?branch=master)](https://travis-ci.com/nyavro/React-streamy)
 
 ### connectStream 
 
