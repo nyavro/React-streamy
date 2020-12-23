@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Connect React with RxJs",
   "author": "Evgeniy Nyavro <e.nyavro@gmail.com>",
-  "homepage": "https://github.com/nyavro/ReactRx",
+  "homepage": "https://github.com/nyavro/React-streamy",
   "license": "MIT",
   "files": [
     "lib/**/*"
