@@ -12,6 +12,12 @@ const Idle = () => (<div data-testid='idle'>No data emitted yet</div>);
 const ShowValueComponent = (props: {value: string}) => (<div data-testid='main'>{props.value}</div>);
 
 describe('Connect observable to React component', () => {
+    test('renders default idle component if not specified', () => {
+        const ConnectedShowValue = connectStream(ShowValueComponent, NEVER);
+        render(<ConnectedShowValue/>);
+        expect(screen.queryByTestId('idle')).not.toBeInTheDocument();
+        expect(screen.queryByTestId('main')).not.toBeInTheDocument();
+    });
     test('renders idle component until observable emit first item', () => {
         const ConnectedShowValue = connectStream(ShowValueComponent, NEVER, Idle);
         render(<ConnectedShowValue/>);
